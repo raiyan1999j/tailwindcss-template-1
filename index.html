@@ -24,9 +24,17 @@
         font-family: "Volkhov", serif;
       }
       .bannerbg{
-        background:url('./resource/image/bannerbg.png');
-        background-repeat: no-repeat;
-        background-position: right top;
+        background: url('./resource/image/bannerbg.png') no-repeat right top;
+      }
+      .connectorBg{
+        background: url('./resource/image/connectorBg.png') no-repeat;
+        background-position: calc(100% - 58px) top;
+        background-size: contain;
+      }
+      .categoryBg{
+        background: url('./resource/image/categoryBg.png') no-repeat;
+        background-position: calc(100% - 73%) bottom;
+        z-index: -30;
       }
     </style>
 </head>
@@ -77,25 +85,25 @@
     <!-- responsive-navArea-finish -->
     
     <!-- headerArea-start -->
-    <section class="py-[27px] bannerbg">
-        <div class="max-w-screen-2xl mx-auto px-[68px] grid grid-cols-2">
+    <section class="py-[27px] bannerbg mb-[105px]">
+        <div class="max-w-screen-2xl mx-auto lg:px-[87.5px] px-10 lg:grid lg:grid-cols-2 flex-col-reverse flex">
             <div class="py-[112px]">
                 <h5 class="poppins font-bold text-xl text-[#DF6951] uppercase">
                     best destinations around the world
                 </h5>
-                <div class="w-[545px] tracking-[-4px] mt-6">
-                    <h1 class="volkov font-bold text-[84px] text-[#181E4B] leading-[89px] text-left">
+                <div class="lg:w-[545px] w-full lg:tracking-[-4px] mt-6">
+                    <h1 class="volkov font-bold lg:text-[84px] text-3xl text-[#181E4B] lg:leading-[89px] text-left">
                         Travel, <span class="relative after:content-[''] after:absolute after:left-0 after:bottom-[5px] after:w-full after:h-[10px] after:bg-[url('./resource/image/underline.png')] after:bg-no-repeat after:bg-bottom after:bg-contain after:-z-20">enjoy</span> and live a new and full lift
                     </h1>
                 </div>
                 
-                <div class="w-[477px] mt-[30px]">
+                <div class="lg:w-[477px] w-full mt-[30px]">
                     <p class="poppins font-medium text-base text-[#5E6282] leading-[30px]">
                         Built Wicket longer admire do barton vanity itself do in it. Preferred to sportsmen it engrossed listening. Park gate sell they west hard for the.
                     </p>
                 </div>
 
-                <div class="flex flex-row items-center gap-x-[44px] mt-[34px]">
+                <div class="flex lg:flex-row flex-col items-center gap-x-[44px] mt-[34px]">
                     <button class="sans font-medium py-[18px] px-[26px] bg-[#F1A501] rounded-lg text-white">
                         Find out more
                     </button>
@@ -121,6 +129,98 @@
     <!-- headerArea-finish -->
 
     <!-- mainArea-start -->
+     <!-- categoryArea-start -->
+      <section class="mb-[68px] connectorBg">
+        <div class="max-w-screen-2xl mx-auto lg:px-[87.5px] text-center">
+            <p class="poppins font-semibold text-lg uppercase text-[#5E6282]">
+                category
+            </p>
+            <h2 class="volkov font-bold text-[50px] text-[#14183E] capitalize">
+                we offer best services
+            </h2>
+        </div>
+      </section>
+
+      <section>
+        <div class="max-w-screen-2xl mx-auto grid grid-cols-4 gap-x-[30px] lg:px-[87.5px] categoryBg">
+            <div class="flex flex-col justify-center items-center transition-all duration-150 ease-linear hover:shadow-lg hover:shadow-black/30 hover:bg-white hover:z-30 rounded-[10%] py-10">
+                <div class="w-[190px] flex flex-row justify-center">
+                    <span class="w-[92px]">
+                        <img src="./resource/image/category1.png" alt="categoryImg">
+                    </span>
+                </div>
+
+                <div class="w-[190px] text-center mt-[29px]">
+                    <h5 class="capitalize sans font-semibold text-xl text-[#1E1D4C]">
+                        calculated weather
+                    </h5>
+                    <div class="mt-[15px]">
+                        <p class="poppins font-medium text-base text-[#5E6282]">
+                            Built Wicket longer admire do barton vanity itself do in it.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="flex flex-col justify-center items-center transition-all duration-150 ease-linear hover:shadow-lg hover:shadow-black/30 hover:bg-white hover:z-30 rounded-[10%] py-10">
+                <div class="w-[190px] flex flex-row justify-center">
+                    <span class="w-[92px]">
+                        <img src="./resource/image/category2.png" alt="categoryImg">
+                    </span>
+                </div>
+
+                <div class="w-[190px] text-center mt-[29px]">
+                    <h5 class="capitalize sans font-semibold text-xl text-[#1E1D4C]">
+                        calculated weather
+                    </h5>
+                    <div class="mt-[15px]">
+                        <p class="poppins font-medium text-base text-[#5E6282]">
+                            Built Wicket longer admire do barton vanity itself do in it.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex flex-col justify-center items-center transition-all duration-150 ease-linear hover:shadow-lg hover:shadow-black/30 hover:bg-white hover:z-30 rounded-[10%] py-10">
+                <div class="w-[190px] flex flex-row justify-center">
+                    <span class="w-[92px]">
+                        <img src="./resource/image/category3.png" alt="categoryImg">
+                    </span>
+                </div>
+
+                <div class="w-[190px] text-center mt-[29px]">
+                    <h5 class="capitalize sans font-semibold text-xl text-[#1E1D4C]">
+                        calculated weather
+                    </h5>
+                    <div class="mt-[15px]">
+                        <p class="poppins font-medium text-base text-[#5E6282]">
+                            Built Wicket longer admire do barton vanity itself do in it.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex flex-col justify-center items-center transition-all duration-150 ease-linear hover:shadow-lg hover:shadow-black/30 hover:bg-white hover:z-30 rounded-[10%] py-10">
+                <div class="w-[190px] flex flex-row justify-center">
+                    <span class="w-[92px]">
+                        <img src="./resource/image/category4.png" alt="categoryImg">
+                    </span>
+                </div>
+
+                <div class="w-[190px] text-center mt-[29px]">
+                    <h5 class="capitalize sans font-semibold text-xl text-[#1E1D4C]">
+                        calculated weather
+                    </h5>
+                    <div class="mt-[15px]">
+                        <p class="poppins font-medium text-base text-[#5E6282]">
+                            Built Wicket longer admire do barton vanity itself do in it.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </section>
+     <!-- categoryArea-finish -->
     <!-- mainArea-finish -->
 
     <!-- footerArea-start -->
