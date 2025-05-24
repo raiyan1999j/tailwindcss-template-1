@@ -40,6 +40,10 @@
         background: url('./resource/image/destinaitonBg.png') no-repeat;
         background-position: calc(100% - 5%);
       }
+      .contactBg{
+        background:url('./resource/image/contactBg3.png') no-repeat;
+        background-position: right bottom;
+      }
     </style>
 </head>
 <body>
@@ -555,7 +559,7 @@
      <!-- testimonialArea-finish -->
 
      <!-- advertisementArea-start -->
-     <section>
+     <section class="mb-[124px]">
         <div class="max-w-screen-2xl mx-auto grid lg:grid-cols-5 grid-cols-1 justify-between items-center lg:px-[87.5px] px-10">
             <span class="px-5 transition-all ease-linear duration-150 bg-white rounded-xl hover:shadow-lg hover:shadow-black/20 flex justify-center items-center">
                 <img src="./resource/image/advertise1.png" alt="advertiseImg">
@@ -575,6 +579,49 @@
         </div>
      </section>
      <!-- advertisementArea-finish -->
+    
+     <!-- subscribeArea-start -->
+      <section class="mb-[123px]">
+        <div class="max-w-screen-2xl mx-auto px-[68px] contactBg">
+            <div class="relative max-w-screen-xl mx-auto px-[23px] z-10 bg-white">
+                <div class="lg:w-full w-[100vw] left-0 bg-[#a29bfe]/50 lg:px-[155px] px-10 py-[79px] lg:rounded-tl-[200px] rounded-tl-xl rounded-tr-[15px] rounded-br-[15px] rounded-bl-[15px]">
+                    <div class="mb-[74px]">
+                        <h4 class="poppins font-semibold lg:text-[33px] text-2xl text-[#5E6282] lg:leading-[54px] text-center">
+                        Subscribe to get information, latest news and other interesting offers about Jadoo
+                    </h4>
+                    </div>
+
+                    <div class="flex lg:flex-row flex-col gap-y-5 w-full justify-center gap-x-6">
+                        <div class="lg:w-[421px] w-full h-[68px] relative">
+                            <span class="absolute z-20 text-2xl text-[#39425D] top-[20px] left-[31px]">
+                                <i class="ri-mail-line"></i>
+                            </span>
+                            <input type="text" class="absolute h-full w-full left-0 bg-white rounded-lg pl-[60px] text-[#39425D] placeholder:font-bold poppins focus:outline-none focus:border-none" placeholder="Your Email">
+                        </div>
+
+                        <div class="lg:w-[180px] w-full">
+                            <button class="w-full h-[68px] rounded-lg bg-gradient-to-r from-[#FF946D] to-[#FF7D68] text-white">
+                                subscribe
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <span class="absolute h-[389px] w-[389px] bg-[url('./resource/image/contactBg1.png')] bg-no-repeat bg-left-bottom left-[40px] top-[20px] -z-20 opacity-20 lg:block hidden">
+
+                </span>
+
+                <span class="absolute h-[284px] w-[284px] bg-[url('./resource/image/contactBg2.png')] bg-no-repeat top-0 right-[-4.5%] -z-20 opacity-20 lg:block hidden">
+
+                </span>
+
+                <span class="h-[70px] w-[70px] rounded-full bg-gradient-to-r from-[#747DEF] to-[#5E3BE1] flex justify-center items-center text-3xl text-white absolute lg:right-[-0%] right-[-22%] top-[-20px]">
+                    <i class="ri-telegram-2-fill"></i>
+                </span>
+            </div>
+        </div>
+      </section>
+     <!-- subscribeArea-finish -->
     <!-- mainArea-finish -->
 
     <!-- footerArea-start -->
